@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Info</title>
+  </head>
+  <body>
+    <form action="/" method="post" id="contact-info">
+      <fieldset>
+        <dl>
+          <dt>
+            <label for="name">Your Name</label>
+          </dt>
+          <dd>
+            <input type="text" id="name" name="name" value="" required
+                   autocapitalize="words" placeholder="first and last name">
+          </dd>
+
+          <dt>
+            <label for="email">Email</label>
+          </dt>
+          <dd>
+            <input type="email" id="email" name="email" value="" required
+                   placeholder="myaddress@example.com">
+          </dd>
+
+          <dt>
+            <label for="phone">Phone Number</label>
+          </dt>
+          <dd>
+            <input type="tel" id="phone" name="phone" value="" required
+                   placeholder="include country code">
+          </dd>
+
+          <dt>
+            <label for="message">Message</label>
+          </dt>
+          <dd>
+            <textarea rows="6" cols="80" name="message" id="message" required
+                      autocorrect="on"></textarea>
+          </dd>
+        </dl>
+
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Clear">
+      </fieldset>
+    </form>
+  </body>
+</html>
